@@ -10,14 +10,24 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="brand">Code<span>Sensei</span></div>
-        <ul class="topnav">
+        <div class="brand">Code<span class="sensei">Sensei</span></div>
+        <ul class="topnav" id="dropDownMenu">
             <li><a class="nav-link" href="#">Home</a></li>
             <li><a class="nav-link" href="#">Products</a></li>
             <li><a class="nav-link" href="#">Company</a></li>
             <li><a class="nav-link" href="#">Blog</a></li>
+            <li class="dropDown"><a href="javascript:void(0);" onclick="dropDownClick()">&#9776;</a></li>
         </ul>
     </nav>
-    
+    <script>
+        function dropDownClick() {
+            let x = document.getElementById("dropDownMenu");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
