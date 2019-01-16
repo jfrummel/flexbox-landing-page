@@ -16,18 +16,15 @@
             <li><a class="nav-link" href="#">Products</a></li>
             <li><a class="nav-link" href="#">Company</a></li>
             <li><a class="nav-link" href="#">Blog</a></li>
-            <li class="dropDown"><a href="javascript:void(0);" onclick="dropDownClick()">&#9776;</a></li>
+            <li class="dropDown"><a href="javascript:void(0);" onclick="toggleDropDown()">&#9776;</a></li>
         </ul>
     </nav>
-    <script>
-        function dropDownClick() {
-            let x = document.getElementById("dropDownMenu");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

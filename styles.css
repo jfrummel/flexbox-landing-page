@@ -44,7 +44,7 @@ a {
     color: #66B6D3;
 }
 
-.dropDdown {
+.dropDown {
     display: none;
 }
 
@@ -58,8 +58,29 @@ a {
         display: none;
     }
 
-        
+    ul.topnav li.dropDown {
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 20px;
     }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+    }
+
+    ul.topnav.responsive li:not(:nth-child(5)) {
+        position: relative;
+        top: 30px;
+        right: 20px;
+        padding: 10px;
+    }
+
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+    }
+        
+}
 
 
 
