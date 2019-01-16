@@ -9,14 +9,19 @@ html, body {
     margin: 0;
 }
 
-nav {
+nav, .container {
     display: flex;
-    padding: 10px;
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
+    
 }
+
+nav {
+    justify-content: space-between;
+    padding: 10px;
+}
+
 
 .topnav {
     margin: 0;
@@ -29,6 +34,10 @@ a {
     text-decoration: none;
     padding-left: 20px;
     font-size: 20px;
+}
+
+a:hover{
+    color: dodgerblue;
 }
 
 .brand, .nav-link, a  {
@@ -48,8 +57,61 @@ a {
     display: none;
 }
 
+/* ######### Header ###############3 */
 
+.container-header {
+    display: flex;
+    justify-content: center;
+}
 
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+img.profile-img {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+}
+
+/* ###### Section 2 ######## */
+.container {
+    background-color: gainsboro;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+img.graph {
+    width: 150px;
+    height: 150px;
+    padding: 38px;
+}
+
+.section-1-text {
+    flex: 1;
+}
+
+.blurb-header {
+    font-size: 24px;
+}
+
+.blurb-text {
+    color: #646B90;
+    font-size: 20px;
+}
 
 /* ####### Mobile ########## */
 
@@ -73,7 +135,9 @@ a {
         position: relative;
         top: 30px;
         right: 20px;
+        text-align: right;
         padding: 10px;
+
     }
 
     ul.topnav.responsive li a.nav-link {
